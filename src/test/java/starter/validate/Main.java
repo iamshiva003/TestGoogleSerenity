@@ -10,8 +10,8 @@ public class Main {
         System.out.println("Message: " + message);
         System.out.println("MessageNum: " + messageNum);
 
-        String name = RemoteFieldAccessor.getFieldValue("starter.check.Navigate", "name", null).toString();
-        System.out.println("Name: " + name);
+//        String name = RemoteFieldDemo.getFieldValue("starter.check.ClassReturns", "name", null).toString();
+//        System.out.println("Name: " + name);
 
 
     }
