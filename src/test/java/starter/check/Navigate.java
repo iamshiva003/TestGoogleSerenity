@@ -23,7 +23,7 @@ public class Navigate extends NavigatPageObjects{
         Actions actions = new Actions(getDriver());
         actions.sendKeys(Keys.ENTER).build().perform();
         try {
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
