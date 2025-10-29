@@ -2,6 +2,7 @@ package starter.check;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import starter.validate.RemoteInvoker;
 
 import static net.serenitybdd.core.Serenity.getDriver;
 
@@ -26,5 +27,10 @@ public class Navigate extends NavigatPageObjects{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+        RemoteInvoker.invoke("starter.check.Navigate", "setupDriver");
+        RemoteInvoker.invoke("starter.check.Navigate", "searchItem");
     }
 }
