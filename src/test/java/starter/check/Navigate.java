@@ -19,7 +19,7 @@ public class Navigate extends NavigatPageObjects{
     }
 
     public void searchItem() {
-        searchbar.sendKeys("Pen");
+        getSearchbar().sendKeys("Pen");
         Actions actions = new Actions(getDriver());
         actions.sendKeys(Keys.ENTER).build().perform();
         try {

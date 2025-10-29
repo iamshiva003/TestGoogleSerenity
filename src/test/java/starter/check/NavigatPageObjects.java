@@ -8,5 +8,7 @@ public class NavigatPageObjects extends PageObject {
     @FindBy(xpath = "//textarea[@title='Search']")
     public WebElementFacade searchbar;
 
-
+    public WebElementFacade getSearchbar() {
+        return searchbar;
+    }
 }
