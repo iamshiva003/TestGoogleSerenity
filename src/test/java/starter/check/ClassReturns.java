@@ -1,6 +1,11 @@
 package starter.check;
 
 public class ClassReturns {
+
+    String name = "Shiva";
+    int age;
+    static String lastName;
+
     public String sayHello() {
         return "Hello from ClassReturns!";
     }

@@ -9,5 +9,10 @@ public class Main {
         int messageNum = Integer.parseInt(RemoteInvokerAdvanced.invoke("starter.check.ClassReturns", "sayNumber").toString());
         System.out.println("Message: " + message);
         System.out.println("MessageNum: " + messageNum);
+
+        String name = RemoteFieldAccessor.getFieldValue("starter.check.Navigate", "name", null).toString();
+        System.out.println("Name: " + name);
+
+
     }
 }
